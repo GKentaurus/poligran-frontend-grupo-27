@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metasysco | Favoritos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <div class="logo-icon">M</div>
+          <span>Metasysco</span>
+        </div>
+
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="favoritos.html" class="active">Favoritos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a href="#" class="btn btn-primary top-btn">Empezar proyecto</a>
+      </header>
+
+      <!-- CONTENIDO -->
+      <main class="favorites-page">
+        <section class="favorites-intro">
+          <span class="section-label">RECURSOS GUARDADOS</span>
+
+          <h1>Tus servicios guardados</h1>
+
+          <p>
+            Revisa y gestiona los servicios que has guardado. Estas soluciones
+            están pensadas para ayudarte a escalar de forma rápida y eficiente.
+          </p>
+        </section>
+
+        <section class="favorites-grid">
+          <!-- CARD 1 -->
+          <article class="experience-card">
+            <img src="img/servicio-1.jpg" alt="Diseño web" />
+            <div class="experience-body">
+              <h3>Diseño y desarrollo web</h3>
+              <p>
+                Arquitecturas web de alto rendimiento enfocadas en velocidad,
+                seguridad y experiencias digitales de calidad.
+              </p>
+
+              <div class="favorite-actions">
+                <a href="servicio-web.html" class="mini-btn">Ver más →</a>
+                <button class="remove-btn">Eliminar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="experience-card">
+            <img src="img/servicio-2.jpg" alt="UX UI" />
+            <div class="experience-body">
+              <h3>Asesoría UX/UI</h3>
+              <p>
+                Estrategias centradas en el usuario que reducen la fricción y
+                potencian la experiencia digital de tus productos.
+              </p>
+
+              <div class="favorite-actions">
+                <a href="#" class="mini-btn">Ver más →</a>
+                <button class="remove-btn">Eliminar</button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© 2024 METASYSCO. ARCHITECTING THE FUTURE.</p>
+      </footer>
+    </div>
+  </body>
+</html>
