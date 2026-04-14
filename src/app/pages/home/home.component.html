@@ -1,0 +1,75 @@
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="eyebrow">INNOVATION LAB 2024</span>
+
+    <h1>
+      Arquitectando el <span>Futuro</span> de
+      <br />
+      los Servicios Digitales
+    </h1>
+
+    <p>
+      Metasysco desarrolla ecosistemas digitales de alto rendimiento que
+      impulsan a empresas globales. Combinamos ingeniería de precisión con
+      diseño de nivel editorial para construir la infraestructura del
+      mañana.
+    </p>
+
+    <div class="hero-buttons">
+      <a (click)="navigateToServices()" class="btn btn-primary">Explorar servicios</a>
+      <a (click)="navigateToContact()" class="btn btn-secondary">Comenzar ahora</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-image-card">
+      <img ngSrc="assets/hero-building.jpg" alt="Edificio corporativo" width="600" height="400" priority />
+    </div>
+
+    <div class="floating-card">
+      <div class="floating-top">
+        <div class="floating-icon">✦</div>
+        <span>ALTA DISPONIBILIDAD</span>
+      </div>
+      <div class="floating-line"></div>
+      <p>99.9% siempre en línea</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="services-head">
+    <div class="services-title">
+      <span class="section-label">CAPACIDADES PRINCIPALES</span>
+      <h2>Soluciones que transforman</h2>
+    </div>
+
+    <div class="services-text">
+      Diseñado para escalar, creado para impactar. Proporcionamos la base
+      tecnológica para empresas que buscan crecer sin límites.
+    </div>
+  </div>
+
+  <div class="services-grid">
+    <article class="service-card" *ngFor="let service of services; let i = index" [ngClass]="{'service-card-bottom': i >= 3}">
+      <div class="service-icon"><span class="material-icons">{{ service.icon || 'widgets' }}</span></div>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.shortDescription || service.description }}</p>
+      <a (click)="navigateToDetail(service.id)" class="mini-btn">Ver más →</a>
+    </article>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-box">
+    <h2>¿Listo para escalar tu negocio?</h2>
+    <p>
+      Únete a más de 500 empresas que confían en Metasysco para construir
+      su base digital. Diseñemos el futuro juntos.
+    </p>
+    <a (click)="navigateToContact()" class="btn btn-light">Comenzar ahora</a>
+  </div>
+</section>

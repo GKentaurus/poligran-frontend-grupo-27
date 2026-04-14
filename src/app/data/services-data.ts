@@ -2,201 +2,287 @@ import { Service } from '../models/service.model';
 
 export const SERVICES_DATA: Service[] = [
   {
-    id: '1',
-    title: 'Web Development',
-    description: 'Full-stack web development services using modern technologies. We build responsive, scalable, and high-performance web applications tailored to your business needs.',
-    shortDescription: 'Professional web development solutions',
-    image: '/assets/images/web-dev.jpg',
+    id: 'diseno-y-desarrollo-web',
+    title: 'Diseño y desarrollo web',
+    description:
+      'Arquitecturas web de alto rendimiento enfocadas en velocidad, seguridad y experiencias digitales de calidad.',
+    shortDescription: 'Arquitecturas web de alto rendimiento',
+    image: 'assets/diseno-y-desarrollo-web.jpg',
+    icon: 'language',
     features: [
       {
         id: 'f1',
-        title: 'Responsive Design',
-        description: 'Mobile-first approach ensuring optimal viewing across all devices'
+        title: 'Diseño Responsive',
+        description: 'Enfoque mobile-first para visualización óptima en todos los dispositivos',
       },
       {
         id: 'f2',
-        title: 'SEO Optimized',
-        description: 'Built with search engine optimization best practices'
+        title: 'Optimización SEO',
+        description: 'Desarrollado con mejores prácticas de optimización para motores de búsqueda',
       },
       {
         id: 'f3',
-        title: 'Fast Performance',
-        description: 'Optimized code for lightning-fast load times'
-      }
+        title: 'Rendimiento Rápido',
+        description: 'Código optimizado para tiempos de carga ultrarrápidos',
+      },
     ],
     testimonials: [
       {
         id: 't1',
-        clientName: 'John Doe',
-        comment: 'Excellent work! The team delivered a stunning website that exceeded our expectations.',
-        rating: 5
+        clientName: 'Carlos Martínez',
+        comment:
+          'Excelente trabajo. El equipo entregó un sitio web impresionante que superó nuestras expectativas.',
+        rating: 5,
       },
       {
         id: 't2',
-        clientName: 'Jane Smith',
-        comment: 'Professional service with great attention to detail. Highly recommended!',
-        rating: 5
-      }
-    ]
+        clientName: 'Ana García',
+        comment: 'Servicio profesional con gran atención al detalle. ¡Altamente recomendado!',
+        rating: 5,
+      },
+    ],
   },
   {
-    id: '2',
-    title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile application development for iOS and Android. We create intuitive and engaging mobile experiences.',
-    shortDescription: 'Custom mobile applications',
-    image: '/assets/images/mobile-dev.jpg',
+    id: 'asesoria-ui-ux',
+    title: 'Asesoría UX/UI',
+    description:
+      'Estrategias centradas en el usuario que reducen la fricción y potencian la experiencia digital de tus productos.',
+    shortDescription: 'Estrategias centradas en el usuario',
+    image: 'assets/asesoria-ui-ux.jpg',
+    icon: 'brush',
     features: [
       {
         id: 'f4',
-        title: 'Cross-Platform',
-        description: 'Develop once, deploy on both iOS and Android'
+        title: 'Investigación de Usuarios',
+        description: 'Decisiones de diseño basadas en datos del comportamiento del usuario',
       },
       {
         id: 'f5',
-        title: 'Native Performance',
-        description: 'Optimized for smooth and responsive user experience'
+        title: 'Prototipado Interactivo',
+        description: 'Prototipos interactivos para probar y validar ideas',
       },
       {
         id: 'f6',
-        title: 'Offline Capabilities',
-        description: 'Apps that work seamlessly without internet connection'
-      }
+        title: 'Sistemas de Diseño',
+        description: 'Bibliotecas de diseño consistentes y escalables',
+      },
     ],
     testimonials: [
       {
         id: 't3',
-        clientName: 'Mike Johnson',
-        comment: 'Our mobile app has been a game-changer for our business. Great work!',
-        rating: 5
-      }
-    ]
+        clientName: 'Miguel Rodríguez',
+        comment: 'El nuevo diseño aumentó nuestra tasa de conversión en 40%. ¡Trabajo increíble!',
+        rating: 5,
+      },
+    ],
   },
   {
-    id: '3',
-    title: 'Cloud Solutions',
-    description: 'Comprehensive cloud services including migration, deployment, and management. We help you leverage the power of cloud computing for your business.',
-    shortDescription: 'Scalable cloud infrastructure',
-    image: '/assets/images/cloud.jpg',
+    id: 'saas-software-as-a-service',
+    title: 'SaaS (Software as a Service)',
+    description:
+      'Aplicaciones escalables en la nube diseñadas para resolver problemas complejos con eficiencia y elegancia.',
+    shortDescription: 'Aplicaciones escalables en la nube',
+    image: 'assets/saas-software-as-a-service.jpg',
+    icon: 'cloud',
     features: [
       {
         id: 'f7',
-        title: 'Scalable Infrastructure',
-        description: 'Easily scale resources based on demand'
+        title: 'Infraestructura Escalable',
+        description: 'Escala recursos fácilmente según la demanda',
       },
       {
         id: 'f8',
-        title: 'Cost-Effective',
-        description: 'Pay only for what you use with optimized resource allocation'
+        title: 'Rentable',
+        description: 'Paga solo por lo que usas con asignación optimizada de recursos',
       },
       {
         id: 'f9',
-        title: 'Secure & Reliable',
-        description: 'Enterprise-grade security and 99.9% uptime guarantee'
-      }
+        title: 'Seguro y Confiable',
+        description: 'Seguridad de nivel empresarial y garantía de 99.9% de tiempo de actividad',
+      },
     ],
     testimonials: [
       {
         id: 't4',
-        clientName: 'Sarah Williams',
-        comment: 'The cloud migration was seamless. Our costs decreased while performance improved.',
-        rating: 5
-      }
-    ]
+        clientName: 'Laura Sánchez',
+        comment:
+          'La migración a la nube fue perfecta. Nuestros costos disminuyeron mientras mejoraba el rendimiento.',
+        rating: 5,
+      },
+    ],
   },
   {
-    id: '4',
-    title: 'UI/UX Design',
-    description: 'User-centered design services that create beautiful and intuitive interfaces. We focus on user experience to ensure your product delights customers.',
-    shortDescription: 'Beautiful and intuitive designs',
-    image: '/assets/images/ui-ux.jpg',
+    id: 'paas-platform-as-a-service',
+    title: 'PaaS (Platform as a Service)',
+    description:
+      'Plataformas robustas que permiten desarrollar y escalar aplicaciones sin preocuparte por la infraestructura.',
+    shortDescription: 'Plataformas robustas de desarrollo',
+    image: 'assets/paas-platform-as-a-service.jpg',
+    icon: 'settings',
     features: [
       {
         id: 'f10',
-        title: 'User Research',
-        description: 'Data-driven design decisions based on user behavior'
+        title: 'Desarrollo Ágil',
+        description: 'Herramientas integradas para desarrollo rápido y eficiente',
       },
       {
         id: 'f11',
-        title: 'Prototyping',
-        description: 'Interactive prototypes to test and validate ideas'
+        title: 'Gestión Automatizada',
+        description: 'Gestión automática de la infraestructura y despliegues',
       },
       {
         id: 'f12',
-        title: 'Design Systems',
-        description: 'Consistent and scalable design libraries'
-      }
+        title: 'Integración Continua',
+        description: 'Pipelines CI/CD integrados para entregas continuas',
+      },
     ],
     testimonials: [
       {
         id: 't5',
-        clientName: 'David Brown',
-        comment: 'The new design increased our conversion rate by 40%. Amazing work!',
-        rating: 5
-      }
-    ]
+        clientName: 'Pedro López',
+        comment:
+          'Nuestra plataforma de desarrollo nos permitió lanzar productos 3 veces más rápido.',
+        rating: 5,
+      },
+    ],
   },
   {
-    id: '5',
-    title: 'Data Analytics',
-    description: 'Transform your data into actionable insights. We provide comprehensive analytics solutions to help you make informed business decisions.',
-    shortDescription: 'Data-driven insights',
-    image: '/assets/images/analytics.jpg',
+    id: 'marketing-digital',
+    title: 'Marketing digital',
+    description:
+      'Estrategias digitales orientadas a resultados que aumentan tu visibilidad, tráfico y conversión.',
+    shortDescription: 'Estrategias digitales orientadas a resultados',
+    image: 'assets/marketing-digital.jpg',
+    icon: 'trending_up',
     features: [
       {
         id: 'f13',
-        title: 'Real-time Analytics',
-        description: 'Monitor key metrics as they happen'
+        title: 'SEO y SEM',
+        description: 'Optimización de motores de búsqueda y campañas publicitarias efectivas',
       },
       {
         id: 'f14',
-        title: 'Custom Dashboards',
-        description: 'Tailored visualizations for your specific needs'
+        title: 'Redes Sociales',
+        description: 'Gestión integral de redes sociales para maximizar el alcance',
       },
       {
         id: 'f15',
-        title: 'Predictive Analysis',
-        description: 'AI-powered forecasting and trend analysis'
-      }
+        title: 'Análisis de Datos',
+        description: 'Métricas detalladas y análisis para optimizar campañas en tiempo real',
+      },
     ],
     testimonials: [
       {
         id: 't6',
-        clientName: 'Emily Davis',
-        comment: 'The analytics platform helped us identify new opportunities. Excellent ROI!',
-        rating: 5
-      }
-    ]
+        clientName: 'María Fernández',
+        comment: 'Las estrategias de marketing digital triplicaron nuestro tráfico web en 6 meses.',
+        rating: 5,
+      },
+    ],
   },
   {
-    id: '6',
-    title: 'Cybersecurity',
-    description: 'Protect your business with comprehensive cybersecurity solutions. We implement best practices to safeguard your digital assets and customer data.',
-    shortDescription: 'Enterprise-grade security',
-    image: '/assets/images/security.jpg',
+    id: 'consultoria-tecnologica',
+    title: 'Consultoría Tecnológica',
+    description:
+      'Asesoramiento experto para transformar tu negocio con estrategias tecnológicas innovadoras y escalables.',
+    shortDescription: 'Asesoramiento experto en tecnología',
+    image: 'assets/consultoria-tecnologica.jpg',
+    icon: 'business_center',
     features: [
       {
         id: 'f16',
-        title: 'Threat Detection',
-        description: '24/7 monitoring and real-time threat identification'
+        title: 'Auditoría Tecnológica',
+        description: 'Evaluación completa de tu infraestructura actual y recomendaciones de mejora',
       },
       {
         id: 'f17',
-        title: 'Compliance',
-        description: 'Meet industry standards and regulatory requirements'
+        title: 'Roadmap Digital',
+        description: 'Plan estratégico personalizado para la transformación digital de tu empresa',
       },
       {
         id: 'f18',
-        title: 'Incident Response',
-        description: 'Rapid response and recovery from security incidents'
-      }
+        title: 'Gestión de Cambios',
+        description: 'Soporte integral en la implementación de nuevas tecnologías',
+      },
     ],
     testimonials: [
       {
         id: 't7',
-        clientName: 'Robert Wilson',
-        comment: 'Their security audit found vulnerabilities we never knew existed. Essential service!',
-        rating: 5
-      }
-    ]
-  }
+        clientName: 'Roberto González',
+        comment:
+          'La consultoría tecnológica nos ayudó a modernizar nuestros procesos y reducir costos operativos en un 30%.',
+        rating: 5,
+      },
+    ],
+  },
+  {
+    id: 'ciberseguridad',
+    title: 'Ciberseguridad',
+    description:
+      'Protección integral de tus activos digitales con soluciones avanzadas de seguridad y monitoreo continuo.',
+    shortDescription: 'Protección integral de activos digitales',
+    image: 'assets/ciberseguridad.jpg',
+    icon: 'security',
+    features: [
+      {
+        id: 'f19',
+        title: 'Auditoría de Seguridad',
+        description: 'Análisis exhaustivo de vulnerabilidades y riesgos en tu infraestructura',
+      },
+      {
+        id: 'f20',
+        title: 'Monitoreo 24/7',
+        description: 'Vigilancia continua de amenazas y respuesta inmediata a incidentes',
+      },
+      {
+        id: 'f21',
+        title: 'Cumplimiento Normativo',
+        description: 'Aseguramiento de cumplimiento con regulaciones de seguridad y privacidad',
+      },
+    ],
+    testimonials: [
+      {
+        id: 't8',
+        clientName: 'Carmen Torres',
+        comment:
+          'La implementación de medidas de ciberseguridad nos protegió de varios ataques. Excelente inversión.',
+        rating: 5,
+      },
+    ],
+  },
+  {
+    id: 'analisis-de-datos',
+    title: 'Análisis de Datos',
+    description:
+      'Transforma tus datos en insights valiosos con soluciones avanzadas de analítica y business intelligence.',
+    shortDescription: 'Datos transformados en insights valiosos',
+    image: 'assets/analisis-de-datos.jpg',
+    icon: 'analytics',
+    features: [
+      {
+        id: 'f22',
+        title: 'Business Intelligence',
+        description: 'Dashboards interactivos y reportes automatizados para toma de decisiones',
+      },
+      {
+        id: 'f23',
+        title: 'Machine Learning',
+        description: 'Modelos predictivos para anticipar tendencias y comportamientos',
+      },
+      {
+        id: 'f24',
+        title: 'Integración de Datos',
+        description: 'Unificación de múltiples fuentes de datos en una plataforma centralizada',
+      },
+    ],
+    testimonials: [
+      {
+        id: 't9',
+        clientName: 'Diego Mendoza',
+        comment:
+          'El análisis de datos nos permitió identificar oportunidades de mercado que estábamos pasando por alto.',
+        rating: 5,
+      },
+    ],
+  },
 ];

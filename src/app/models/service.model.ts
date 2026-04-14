@@ -4,6 +4,7 @@ export interface Service {
   description: string;
   shortDescription: string;
   image: string;
+  icon?: string;
   features: Feature[];
   testimonials: Testimonial[];
 }

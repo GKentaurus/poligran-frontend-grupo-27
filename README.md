@@ -1,6 +1,39 @@
-# PoligranFrontendGrupo27
+# PoliGran - Frontend - Grupo27
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+
+## Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- **Node.js**: Version 18.19.1 or higher (required for Angular 21.x)
+- **npm**: Version 11.6.2 or higher (specified in package.json)
+
+You can check your versions by running:
+```bash
+node --version
+npm --version
+```
+
+## Installation
+
+1. Clone the repository and navigate to the project directory:
+```bash
+cd poligran-frontend-grupo-27
+```
+
+2. Install all project dependencies:
+```bash
+npm install
+```
+
+This will install all the required dependencies listed in `package.json`, including:
+- Angular framework packages (@angular/core, @angular/common, @angular/forms, etc.)
+- Angular Material for UI components
+- RxJS for reactive programming
+- TypeScript for type-safe development
+- Vitest for unit testing
+- Angular CLI for development and build tools
 
 ## Development server
 

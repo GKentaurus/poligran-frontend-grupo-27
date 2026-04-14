@@ -1,37 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { Service } from '../../models/service.model';
-import { ServiceService } from '../../services/service.service';
 import { FavoritesService } from '../../services/favorites.service';
-import { ServiceDetailCardComponent } from '../../components/service-detail-card/service-detail-card.component';
-import { TestimonialSliderComponent } from '../../components/testimonial-slider/testimonial-slider.component';
+import { SERVICES_DATA } from '../../data/services-data';
 
 @Component({
   selector: 'app-service-detail',
   standalone: true,
-  imports: [CommonModule, ServiceDetailCardComponent, TestimonialSliderComponent],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './service-detail.component.html',
   styleUrl: './service-detail.component.css'
 })
 export class ServiceDetailComponent implements OnInit {
   service: Service | undefined;
-  loading = true;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private serviceService: ServiceService,
     private favoritesService: FavoritesService
   ) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      this.serviceService.getServiceById(id).subscribe(service => {
-        this.service = service;
-        this.loading = false;
-      });
+      this.service = SERVICES_DATA.find(s => s.id === id);
+      if (!this.service) {
+        this.router.navigate(['/services']);
+      }
     } else {
       this.router.navigate(['/services']);
     }
@@ -49,5 +46,11 @@ export class ServiceDetailComponent implements OnInit {
 
   isFavorite(): boolean {
     return this.service ? this.favoritesService.isFavorite(this.service.id) : false;
+  }
+
+  navigateToContact(): void {
+    if (this.service) {
+      this.router.navigate(['/contact'], { queryParams: { serviceId: this.service.id } });
+    }
   }
 }

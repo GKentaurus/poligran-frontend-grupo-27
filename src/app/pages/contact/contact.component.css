@@ -1,0 +1,42 @@
+.invalid {
+  border: 2px solid #e74c3c !important;
+}
+
+.error-message {
+  display: block;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.success-content {
+  text-align: center;
+}
+
+.checkmark {
+  font-size: 80px;
+  color: #27ae60;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.success-content h2 {
+  font-size: 32px;
+  color: #171922;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.success-content p {
+  font-size: 16px;
+  color: #5d6371;
+  line-height: 1.6;
+}

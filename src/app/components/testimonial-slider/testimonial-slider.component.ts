@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Testimonial } from '../../models/service.model';
 
 @Component({
   selector: 'app-testimonial-slider',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './testimonial-slider.component.html',
   styleUrl: './testimonial-slider.component.css'
 })

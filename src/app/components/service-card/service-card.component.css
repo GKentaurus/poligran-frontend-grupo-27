@@ -1,0 +1,11 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
