@@ -1,0 +1,29 @@
+<main class="services-page">
+  <section class="services-intro">
+    <span class="section-label">CAPACIDADES PRINCIPALES</span>
+    <h1>Nuestra experiencia</h1>
+    <p>
+      Combinamos una estética editorial de alto nivel con precisión
+      técnica para diseñar soluciones digitales que redefinen los
+      estándares de la industria.
+    </p>
+  </section>
+
+  <section class="experience-grid">
+    <article class="experience-card" *ngFor="let service of services; let first = first">
+      <img [ngSrc]="service.image" [alt]="service.title" width="400" height="300" [priority]="first" />
+      <div class="experience-body">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <a (click)="navigateToDetail(service.id)" class="mini-btn">Ver más <span>→</span></a>
+      </div>
+    </article>
+
+    <aside class="innovation-card">
+      <span>ÚLTIMA INNOVACIÓN</span>
+      <h2>Explora el futuro de la arquitectura empresarial.</h2>
+      <a (click)="navigateToContact()" class="innovation-btn">Contactar ahora ↗</a>
+      <div class="innovation-lines"></div>
+    </aside>
+  </section>
+</main>

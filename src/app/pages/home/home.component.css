@@ -1,0 +1,16 @@
+img {
+  height: auto;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-light,
+.mini-btn {
+  cursor: pointer;
+}
+
+.service-icon .material-icons {
+  font-size: 24px;
+  color: #1783dc;
+}

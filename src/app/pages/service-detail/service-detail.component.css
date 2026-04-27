@@ -1,0 +1,26 @@
+img {
+  height: auto;
+}
+
+.sidebar-btn {
+  cursor: pointer;
+}
+
+.sidebar-fav {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: none;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  text-decoration: none;
+  border: 1px solid #e5e8f0;
+  border-radius: 12px;
+  color: #171922;
+  background: #ffffff;
+  font-weight: 600;
+  padding: 0;
+}

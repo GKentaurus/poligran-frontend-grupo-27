@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="logo" (click)="navigateToHome()">
+    <div class="logo-icon">M</div>
+    <span>Metasysco</span>
+  </div>
+
+  <nav class="nav">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/services" routerLinkActive="active">Servicios</a>
+    <a routerLink="/favorites" routerLinkActive="active">Favoritos</a>
+    <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+  </nav>
+
+  <a (click)="navigateToContact()" class="btn btn-primary top-btn">Empezar proyecto</a>
+</header>

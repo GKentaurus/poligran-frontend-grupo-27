@@ -1,0 +1,32 @@
+<div class="testimonial-slider" *ngIf="testimonials.length > 0">
+  <div class="testimonial-container">
+    @for (testimonial of testimonials; track testimonial.id) {
+      <div class="testimonial-slide" [hidden]="currentIndex !== $index">
+        @if (testimonial.avatar) {
+          <img [src]="testimonial.avatar" [alt]="testimonial.clientName">
+        }
+        <p class="client-name">{{ testimonial.clientName }}</p>
+        <p class="comment">{{ testimonial.comment }}</p>
+        <div class="rating">
+          @for (star of getStars(testimonial.rating); track $index) {
+            <span>★</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+  
+  @if (testimonials.length > 1) {
+    <button (click)="previous()">Previous</button>
+    <div class="indicators">
+      @for (testimonial of testimonials; track testimonial.id) {
+        <span 
+          class="indicator" 
+          [class.active]="currentIndex === $index"
+          (click)="goTo($index)">
+        </span>
+      }
+    </div>
+    <button (click)="next()">Next</button>
+  }
+</div>

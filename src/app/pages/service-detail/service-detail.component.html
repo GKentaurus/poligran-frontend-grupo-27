@@ -1,0 +1,59 @@
+<main class="service-detail-page" *ngIf="service">
+  <div class="detail-layout">
+    <section class="detail-main">
+      <div class="detail-hero">
+        <img [ngSrc]="service.image" [alt]="service.title" width="800" height="400" priority />
+        <div class="detail-hero-overlay">
+          <h1>{{ service.title }}</h1>
+        </div>
+      </div>
+
+      <div class="detail-intro">
+        <h2>{{ service.shortDescription }}</h2>
+        <p>{{ service.description }}</p>
+      </div>
+
+      <section class="detail-capabilities">
+        <h3>Capacidades principales</h3>
+
+        <div class="capabilities-grid">
+          <article class="capability-card" *ngFor="let feature of service.features">
+            <div class="service-icon">▣</div>
+            <h4>{{ feature.title }}</h4>
+            <p>{{ feature.description }}</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonial-box" *ngIf="service.testimonials && service.testimonials.length > 0">
+        <div class="quote-mark">{{ service.testimonials[0].rating * 20 }}</div>
+        <p>"{{ service.testimonials[0].comment }}"</p>
+
+        <div class="testimonial-user">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <strong>{{ service.testimonials[0].clientName }}</strong>
+            <span>Cliente satisfecho</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <aside class="detail-sidebar">
+      <div class="project-request-card">
+        <h3>Solicitud de proyecto</h3>
+
+        <ul>
+          <li>Entrega promedio de 4 a 8 semanas</li>
+          <li>12 meses de soporte post-lanzamiento</li>
+          <li>Infraestructura en la nube gestionada</li>
+        </ul>
+
+        <button (click)="navigateToContact()" class="btn btn-primary sidebar-btn">Solicitar cotización →</button>
+        <button class="sidebar-fav" (click)="toggleFavorite()">
+          {{ isFavorite() ? '♥' : '♡' }} {{ isFavorite() ? 'En favoritos' : 'Agregar a favoritos' }}
+        </button>
+      </div>
+    </aside>
+  </div>
+</main>
